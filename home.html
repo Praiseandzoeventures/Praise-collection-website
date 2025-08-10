@@ -5,7 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body> this is home page
+<body> 
+    <h1>this my collection page</h1>
+    <center>
+
     
+    <div>
+        <img src="https://i.pinimg.com/736x/01/48/d3/0148d30ff1d9a0680a798b288e25d22e.jpg" alt="my frist pictures " class="myslide">
+        <img src="https://images.stockcake.com/public/b/2/9/b298ed94-66f4-4e22-9f63-76e3b76c2261_large/elegant-runway-model-stockcake.jpg" alt="my second picture"class="myslide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WDzB1pdvUoHbWbBFgWVgS9tilOkZ_pFTVQ&s" alt=" my thrid picture"class="myslide">
+
+
+    </div>
+    <script>
+      var index=0
+      function carousel(){
+       var i;
+       var x =document.getElementsByClassName("myslide")
+       for(i=0;i<x.length; i++ ){
+        x[i].style.display="none"
+       }
+       index++;
+       if(index< x.length){
+        index=1;
+       }
+      x [index - 1].style.display="block"
+      setTimeout(carousel,2000)
+
+
+
+      }
+      carousel()
+    </script>
+    </center>
 </body>
 </html>
